@@ -6,8 +6,8 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "files": ["dist"],
   "main": "index.js",
+  "files": ["dist"],
   "scripts": {
     "test": "vitest",
     "dev": "vite",
