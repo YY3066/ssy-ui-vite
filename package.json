@@ -13,7 +13,8 @@
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --fix"
+   "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.0.0",
@@ -21,6 +22,7 @@
     "pinia": "^2.2.6",
     "ssy-ui-vite": "^1.8.0",
     "vue": "^3.5.12",
+    "lint": "eslint .",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
