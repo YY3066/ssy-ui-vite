@@ -1,53 +1,45 @@
-<p align="center">
-<div style="width:150px;margin:auto;">
-<div align="center">
-  <img src="https://img1.baidu.com/it/u=1287072252,2237298563&fm=253&fmt=auto&app=120&f=JPEG">
-</div>
-</div>
-</p>
-<h1 align="center">SSY-UI-VITE</h1>
-<p align="center">
-  基于 Vite 栈的前端工程化实践
-</p>
+# ssy-ui-template
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/WinterBreeze052/ssy-ui-vite?color=red">
-<a href="https://codecov.io/github/YY3066/ssy-ui-vite">
- <img src="https://codecov.io/github/YY3066/ssy-ui-vite/graph/badge.svg?token=O1EVCZEWCM"/>
- </a>
-</p>
+This template should help get you started developing with Vue 3 in Vite.
 
-## Features
+## Recommended IDE Setup
 
-- 一基于 Vue 框架
-- 支持JSX 与Vue单文件组件
-- Jest + Vue3 plugins实现单元测试
-- Eslint + Prettier + Husky 语法检查
-- 采用Rollup构建
-- Vitepress + Vercel 文档网站搭建
-- 基于ActionCI实现持续集成与交付
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Install
+## Type Support for `.vue` Imports in TS
 
-```bash
-import Vue from "vue"
-import SSYUI from "ssy-ui"
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-const App = {
-  template:`
-  <SButton color="blue">主要按钮</SButton>
-  `,
-};
+## Customize configuration
 
-createApp(App)
-  .use(SSYUI)
-  .mount('#app');
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+pnpm install
 ```
 
-## Quick Start
+### Compile and Hot-Reload for Development
 
-如果希望尽快上手，可以访问[🔨 SSY-UI-VITE 是什么? | VitePress](https://ssy-ui-vite-five.vercel.app/),
+```sh
+pnpm dev
+```
 
-##### 欢迎提PR
+### Type-Check, Compile and Minify for Production
 
-一起加入项目,
+```sh
+pnpm build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+pnpm test:unit
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+pnpm lint
+```
